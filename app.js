@@ -1,3 +1,6 @@
+// Combine the 3 data modules
+const episodesData = [...episodes1, ...episodes2, ...episodes3];
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuList = document.getElementById('menu-list');
     const contentContainer = document.getElementById('content-container');
