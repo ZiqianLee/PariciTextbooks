@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par Ici A1 - Quebec French Learner</title>
+    <meta name="description" content="A comprehensive bilingual resource for learning Quebec French at the A1 Level.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar Navigation -->
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <h1>Par Ici A1</h1>
+                <p>Quebec French Learner</p>
+            </div>
+            <ul id="menu-list" class="menu-list">
+                <!-- Dynamically populated by JS -->
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main id="main-content" class="main-content">
+            <!-- Mobile Header -->
+            <header class="mobile-header">
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <h2>Par Ici A1</h2>
+            </header>
+
+            <div class="content-container animate-fade-in" id="content-container">
+                <div class="welcome-screen">
+                    <h1>Welcome / Bienvenue</h1>
+                    <p>Select a chapter from the menu to start your Quebec French journey!</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
