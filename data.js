@@ -1,216 +1,506 @@
 const episodesData = [
     {
         id: "1",
-        title: "Salutations et Présentations",
-        theme: "Greetings and Introductions",
+        title: "Identité et Situation Personnelle",
+        theme: "Identity and Personal Situation",
         vocabulary: [
-            { fr: "Bonjour", en: "Hello / Good morning" },
-            { fr: "Salut", en: "Hi / Bye (informal)" },
-            { fr: "Comment ça va ?", en: "How are you?" },
-            { fr: "Allô", en: "Hello", note: "Used both on the phone and as a general greeting in Quebec." },
-            { fr: "Bienvenue", en: "Welcome" },
-            { fr: "À la prochaine", en: "See you next time" },
-            { fr: "Je m'appelle...", en: "My name is..." }
+            { fr: "Allo !", en: "Hello! (Informal / Phone)", note: "Used both on the phone and as a general greeting in Quebec." },
+            { fr: "Salut !", en: "Hi! (Informal)" },
+            { fr: "Bonjour !", en: "Hello! (Daytime greeting)" },
+            { fr: "Bye !", en: "Bye! (Informal)" },
+            { fr: "À bientôt !", en: "See you later! (Informal)" },
+            { fr: "Au revoir !", en: "Goodbye! (General)" },
+            { fr: "Je suis célibataire.", en: "I am single." },
+            { fr: "Je suis marié(e).", en: "I am married." },
+            { fr: "Je suis divorcé(e).", en: "I am divorced." },
+            { fr: "Je suis conjoint de fait.", en: "I am in a common-law relationship." },
+            { fr: "J’ai un garçon / une fille.", en: "I have a boy / a girl." },
+            { fr: "Je n’ai pas d’enfants.", en: "I do not have children." },
+            { fr: "vendeur / vendeuse", en: "salesperson" },
+            { fr: "musicien / musicienne", en: "musician" },
+            { fr: "professeur / professeure", en: "teacher" },
+            { fr: "infirmier / infirmière", en: "nurse" },
+            { fr: "le Mexique", en: "Mexico" },
+            { fr: "les États-Unis", en: "United States" },
+            { fr: "la Chine", en: "China" }
         ],
         grammar: [
             {
-                title: "Les pronoms sujets (Subject Pronouns)",
-                explanation: "<p>In French, the subject pronouns identify who is speaking, spoken to, or spoken about. Note the distinction between <strong>tu</strong> (informal singular) and <strong>vous</strong> (formal singular or plural).</p>",
+                title: "Venir de (To come from)",
+                explanation: "<p>To say 'I come from', use <strong>Je viens de + Country</strong>. The preposition <em>de</em> contracts based on the country's gender:</p>",
                 examples: [
-                    { fr: "Je", en: "I" },
-                    { fr: "Tu", en: "You (informal)" },
-                    { fr: "Il / Elle / On", en: "He / She / We (informal)" },
-                    { fr: "Nous", en: "We (formal/written)" },
-                    { fr: "Vous", en: "You (formal/plural)" },
-                    { fr: "Ils / Elles", en: "They (masculine / feminine)" }
+                    { fr: "Je viens du Pérou (de + le).", en: "I come from Peru (Masculine)." },
+                    { fr: "Je viens de la France (de + la).", en: "I come from France (Feminine)." },
+                    { fr: "Je viens d'Allemagne (de + l').", en: "I come from Germany (Vowel)." },
+                    { fr: "Je viens des États-Unis (de + les).", en: "I come from the United States (Plural)." }
                 ]
             },
             {
-                title: "Le verbe S'APPELER (To be called)",
-                explanation: "<p>Used to introduce oneself. It is a reflexive verb.</p>",
+                title: "Standard Introduction Structure",
+                explanation: "<p>Combining everything into a full introduction:</p>",
                 examples: [
-                    { fr: "Je m'appelle", en: "My name is" },
-                    { fr: "Tu t'appelles", en: "Your name is" },
-                    { fr: "Il/Elle s'appelle", en: "His/Her name is" }
+                    { fr: "Je m'appelle [Name]. Je suis [Marital Status]. Je suis [Profession]. Je suis [Nationality]. J'habite à [City]. Je parle [Language].", en: "My name is [Name]. I am [Status]. I am [Profession]. I am [Nationality]. I live in [City]. I speak [Language]." }
                 ]
             }
         ],
         dialogues: [
             {
-                context: "Rencontre informelle (Informal meeting at a café)",
+                context: "Formal Meeting",
                 lines: [
-                    { speaker: "Marie", fr: "Allô ! Comment ça va ?", en: "Hi! How are you?", align: "left" },
-                    { speaker: "Luc", fr: "Salut Marie ! Ça va bien, et toi ?", en: "Hi Marie! It's going well, and you?", align: "right" },
-                    { speaker: "Marie", fr: "Super bien ! Je te présente mon ami, Paul.", en: "Super good! I present my friend, Paul.", align: "left" },
-                    { speaker: "Paul", fr: "Salut Luc, enchanté.", en: "Hi Luc, nice to meet you.", align: "left" },
-                    { speaker: "Luc", fr: "Enchanté Paul. Bienvenue à Montréal !", en: "Nice to meet you Paul. Welcome to Montreal!", align: "right" }
+                    { speaker: "Valérie", fr: "Bonjour ! Mon nom est Valérie.", en: "Hello! My name is Valérie.", align: "left" },
+                    { speaker: "Sébastien", fr: "Bonjour, madame. Je suis Sébastien. Ravi de vous rencontrer.", en: "Hello, ma'am. I am Sébastien. Nice to meet you.", align: "right" },
+                    { speaker: "Valérie", fr: "De même.", en: "Likewise.", align: "left" }
                 ]
             }
         ],
-        culture: "<p><strong>La bise vs. Le câlin :</strong> In Quebec, people often greet close friends and family with a single light hug (un câlin) or sometimes a kiss on each cheek (la bise), though less systematically than in France.</p><p>You will frequently hear <em>Allô</em> used in person instead of <em>Bonjour</em> or <em>Salut</em>. This is a very common Quebecism.</p>"
+        culture: "<p><strong>Accents:</strong> You learned the French letters and special accents like accent aigu (é), accent grave (è), tréma (ï), and cédille (ç) which forces 'c' to sound like 's' before a/o/u.</p>"
     },
     {
         id: "2",
-        title: "Les Nombres et L'âge",
-        theme: "Numbers and Age",
+        title: "Nombres, Âge et Dates",
+        theme: "Numbers, Age, and Dates",
         vocabulary: [
-            { fr: "Un, deux, trois", en: "One, two, three" },
-            { fr: "Quatre, cinq, six", en: "Four, five, six" },
-            { fr: "Sept, huit, neuf, dix", en: "Seven, eight, nine, ten" },
-            { fr: "Quel âge as-tu ?", en: "How old are you? (informal)" },
-            { fr: "J'ai vingt ans", en: "I am twenty years old" },
-            { fr: "L'année", en: "The year" },
-            { fr: "Le mois", en: "The month" }
+            { fr: "Vingt-sept (27)", en: "Twenty-seven" },
+            { fr: "Trente-et-un (31)", en: "Thirty-one" }
         ],
         grammar: [
             {
-                title: "Le verbe AVOIR (To have)",
-                explanation: "<p>Unlike in English where we say 'I am 20', in French we say 'I have 20 years'. The verb <strong>avoir</strong> is essential.</p>",
+                title: "Special Rules for French Numbers",
+                explanation: "<p>Numbers from 70 to 99 use mathematics in French.</p>",
                 examples: [
-                    { fr: "J'ai", en: "I have" },
-                    { fr: "Tu as", en: "You have" },
-                    { fr: "Il/Elle/On a", en: "He/She/We has" },
-                    { fr: "Nous avons", en: "We have" },
-                    { fr: "Vous avez", en: "You have" },
-                    { fr: "Ils/Elles ont", en: "They have" }
+                    { fr: "70 (soixante-dix)", en: "60 + 10" },
+                    { fr: "80 (quatre-vingts)", en: "4 x 20" },
+                    { fr: "92 (quatre-vingt-douze)", en: "80 + 12" },
+                    { fr: "Trois millions", en: "Three million (million takes an 's' in plural)" }
                 ]
-            }
-        ],
-        dialogues: [
+            },
             {
-                context: "À la clinique (At the clinic reception)",
-                lines: [
-                    { speaker: "Réceptionniste", fr: "Bonjour. Quel est votre nom ?", en: "Hello. What is your name?", align: "left" },
-                    { speaker: "Client", fr: "Je m'appelle Sophie Tremblay.", en: "My name is Sophie Tremblay.", align: "right" },
-                    { speaker: "Réceptionniste", fr: "Quel âge avez-vous, Madame Tremblay ?", en: "How old are you, Mrs. Tremblay?", align: "left" },
-                    { speaker: "Client", fr: "J'ai trente-deux ans.", en: "I am thirty-two years old.", align: "right" }
+                title: "Expressing Birthdays",
+                explanation: "<p>The standard format is Day-Month-Year. In writing, internationally it's YYYY-MM-DD. For the 1st of the month, always use '1er' (premier).</p>",
+                examples: [
+                    { fr: "Ma date de naissance, c’est le 12 décembre 1993.", en: "My date of birth is December 12, 1993." },
+                    { fr: "Je suis né le 30 octobre 1982.", en: "I was born on October 30, 1982." }
                 ]
             }
         ],
-        culture: "<p>In Quebec, the number 70 is 'soixante-dix', 80 is 'quatre-vingts', and 90 is 'quatre-vingt-dix', exactly like in standard European French. Unlike Switzerland or Belgium, Quebeckers do not use 'septante' or 'nonante'.</p>"
+        dialogues: [],
+        culture: "<p>Quebeckers use the exact same complex numbers (soixante-dix, quatre-vingts) as in France, avoiding the 'septante / nonante' used in Switzerland.</p>"
     },
     {
         id: "3",
-        title: "Professions et Nationalités",
-        theme: "Professions and Nationalities",
+        title: "L'Heure, la Politesse et l'Horaire",
+        theme: "Time, Politeness, and Schedule",
         vocabulary: [
-            { fr: "Étudiant / Étudiante", en: "Student (m/f)" },
-            { fr: "Professeur", en: "Teacher / Professor" },
-            { fr: "Médecin", en: "Doctor" },
-            { fr: "Infirmier / Infirmière", en: "Nurse (m/f)" },
-            { fr: "Québécois / Québécoise", en: "Quebecer (m/f)" },
-            { fr: "Canadien / Canadienne", en: "Canadian (m/f)" },
-            { fr: "Français / Française", en: "French (m/f)" }
+            { fr: "Nom / Prénom", en: "Last Name / First Name" },
+            { fr: "Date de naissance", en: "Date of Birth" },
+            { fr: "Courriel", en: "Email" }
         ],
         grammar: [
             {
-                title: "Le verbe ÊTRE (To be) & Masculin/Féminin",
-                explanation: "<p>The verb <strong>être</strong> is used for professions and nationalities. Note that adjectives denoting nationality or profession change based on gender.</p>",
+                title: "Telling Time",
+                explanation: "<p>Use <em>moins</em> to express 'minutes to' an hour, and <em>et</em> for adding halves/quarters.</p>",
                 examples: [
-                    { fr: "Je suis", en: "I am" },
-                    { fr: "Tu es", en: "You are" },
-                    { fr: "Il est / Elle est", en: "He is / She is" },
-                    { fr: "Je suis étudiant (masc.)", en: "I am a student" },
-                    { fr: "Je suis étudiante (fém.)", en: "I am a student" }
+                    { fr: "onze heures moins quart", en: "Quarter to eleven (10:45)" },
+                    { fr: "une heure et quart", en: "Quarter past one (1:15)" },
+                    { fr: "cinq heures et demie", en: "Half past five (5:30)" }
+                ]
+            },
+            {
+                title: "Formal vs Informal Addressing (Tu vs Vous)",
+                explanation: "<p>Use <em>vous</em> (Formal) for strangers and elders. Use <em>tu</em> (Informal) for friends.</p>",
+                examples: [
+                    { fr: "As-tu l'heure? (Informal)", en: "Do you have the time?" },
+                    { fr: "Avez-vous l'heure? (Formal)", en: "Do you have the time?" }
                 ]
             }
         ],
         dialogues: [
             {
-                context: "Dans un cours de francisation (In a French integration class)",
+                context: "Discussing Schedules",
                 lines: [
-                    { speaker: "Prof", fr: "Bonjour tout le monde ! Je m'appelle Denis, je suis professeur.", en: "Hello everyone! My name is Denis, I am a teacher.", align: "left" },
-                    { speaker: "Anna", fr: "Bonjour. Moi, c'est Anna. Je suis étudiante.", en: "Hello. Me, I'm Anna. I'm a student.", align: "right" },
-                    { speaker: "Prof", fr: "Quelle est ta nationalité, Anna ?", en: "What is your nationality, Anna?", align: "left" },
-                    { speaker: "Anna", fr: "Je suis brésilienne.", en: "I am Brazilian.", align: "right" }
+                    { speaker: "Person A", fr: "Le cours de français est de 18 h à 21 h.", en: "The French class is from 18:00 to 21:00.", align: "left" },
+                    { speaker: "Person B", fr: "Le restaurant est ouvert du mardi au samedi.", en: "The restaurant is open from Tuesday to Saturday.", align: "right" }
                 ]
             }
         ],
-        culture: "<p>Francisation classes are subsidized courses provided by the Government of Quebec to help new immigrants learn French and integrate into the society.</p>"
+        culture: "<p>Quebec French often simplifies time in fast casual speech, but remains standard in writing. Abbreviations like <em>ch.</em> (chemin/road), <em>boul.</em> (boulevard), and <em>app.</em> (apartment) are very common.</p>"
     },
     {
         id: "4",
-        title: "L'Heure et Les Jours",
-        theme: "Time and Days of the week",
+        title: "Les Objets et la Localisation",
+        theme: "Objects and Locations",
         vocabulary: [
-            { fr: "Lundi, Mardi, Mercredi", en: "Monday, Tuesday, Wednesday" },
-            { fr: "Jeudi, Vendredi", en: "Thursday, Friday" },
-            { fr: "Samedi, Dimanche", en: "Saturday, Sunday" },
-            { fr: "Quelle heure est-il ?", en: "What time is it?" },
-            { fr: "Il est midi", en: "It is noon" },
-            { fr: "Aujourd'hui", en: "Today" },
-            { fr: "Demain", en: "Tomorrow" }
+            { fr: "La table", en: "The table" },
+            { fr: "Le crayon", en: "The pencil" },
+            { fr: "Les clés", en: "The keys" },
+            { fr: "Le parapluie", en: "The umbrella" },
+            { fr: "Sur", en: "On" },
+            { fr: "Sous", en: "Under" },
+            { fr: "Derrière", en: "Behind" }
         ],
         grammar: [
             {
-                title: "Demander et dire l'heure",
-                explanation: "<p>In Quebec, people often use the 12-hour clock in speech (using matin, après-midi, soir) but the 24-hour clock is common in written contexts like schedules.</p>",
+                title: "There is / There are (Il y a)",
+                explanation: "<p><strong>Il y a</strong> is fixed and answers 'what exists here'. The negative is <strong>Il n'y a pas</strong>.</p>",
                 examples: [
-                    { fr: "Il est trois heures.", en: "It is three o'clock." },
-                    { fr: "Il est trois heures et quart.", en: "It is a quarter past three." },
-                    { fr: "Il est trois heures et demie.", en: "It is half past three." }
+                    { fr: "Sur la table, il y a une lampe.", en: "On the table, there is a lamp." },
+                    { fr: "Sur le lit, il n’y a rien.", en: "On the bed, there is nothing." }
                 ]
-            }
-        ],
-        dialogues: [
+            },
             {
-                context: "Prendre un rendez-vous (Making an appointment)",
-                lines: [
-                    { speaker: "Marc", fr: "On se voit quel jour ?", en: "What day are we seeing each other?", align: "left" },
-                    { speaker: "Julie", fr: "Jeudi. À quelle heure ?", en: "Thursday. At what time?", align: "right" },
-                    { speaker: "Marc", fr: "À midi et demi, ça te va ?", en: "At twelve thirty, does that work for you?", align: "left" },
-                    { speaker: "Julie", fr: "Parfait, à jeudi !", en: "Perfect, see you Thursday!", align: "right" }
+                title: "Possession with 'de'",
+                explanation: "<p>To state ownership ('X's Y'), invert it to 'The Y of X' using the preposition <em>de</em>.</p>",
+                examples: [
+                    { fr: "Voici la table de Jean-Martin.", en: "Here is Jean-Martin's table." },
+                    { fr: "Voici le crayon de Geneviève.", en: "Here is Geneviève's pencil." }
                 ]
             }
         ],
-        culture: "<p>A common Quebecism when talking about schedules is saying <strong>'ça te va ?'</strong> or <strong>'ça a d'l'allure'</strong> (makes sense/looks good).</p>"
+        dialogues: [],
+        culture: "<p>Visual description is straightforward. 'Dans le dessin A, les crayons sont sur la table' (In drawing A, the pencils are on the table).</p>"
     },
     {
         id: "5",
-        title: "La Famille",
-        theme: "Family and Relationships",
+        title: "Famille et Adjectifs Possessifs",
+        theme: "Family and Possessive Adjectives",
         vocabulary: [
-            { fr: "Le père / La mère", en: "Father / Mother" },
-            { fr: "Le frère / La soeur", en: "Brother / Sister" },
-            { fr: "L'enfant", en: "The child" },
-            { fr: "Le chum", en: "The boyfriend (Quebec colloquial)" },
-            { fr: "La blonde", en: "The girlfriend (Quebec colloquial)" },
-            { fr: "Le mari / La femme", en: "Husband / Wife" }
+            { fr: "L'auto", en: "The car (Quebec)" },
+            { fr: "Le parc de stationnement", en: "The parking lot" },
+            { fr: "Le sac à main", en: "The handbag" }
         ],
         grammar: [
             {
-                title: "Les adjectifs possessifs (Possessive Adjectives)",
-                explanation: "<p>They agree in gender and number with the noun they possess, NOT the gender of the owner.</p>",
+                title: "Possessive Adjectives",
+                explanation: "<p>Possessive adjectives (My, Your, His...) agree with the gender and number of the <strong>object being possessed</strong>, not the owner.</p>",
                 examples: [
-                    { fr: "Mon frère", en: "My brother (masculine)" },
-                    { fr: "Ma soeur", en: "My sister (feminine)" },
-                    { fr: "Mes enfants", en: "My children (plural)" },
-                    { fr: "Ton / Ta / Tes", en: "Your (singular)" },
-                    { fr: "Son / Sa / Ses", en: "His / Her / Its" }
+                    { fr: "Son père", en: "His/Her father (Masculine)" },
+                    { fr: "Ses crayons", en: "His/Her pencils (Plural)" },
+                    { fr: "Ton auto", en: "Your car (Feminine, but takes 'ton' because 'auto' starts with a vowel)" }
+                ]
+            },
+            {
+                title: "Polite 'Vous'",
+                explanation: "<p>When using the polite <em>Vous</em>, your possessive adjectives become <em>votre</em> (singular) and <em>vos</em> (plural).</p>",
+                examples: [
+                    { fr: "Votre famille", en: "Your family (Formal)" }
                 ]
             }
         ],
         dialogues: [
             {
-                context: "Montrer une photo (Showing a photo)",
+                context: "Formal Introductions",
                 lines: [
-                    { speaker: "Céline", fr: "C'est qui sur la photo ?", en: "Who is that in the photo?", align: "left" },
-                    { speaker: "David", fr: "C'est mon chum, Simon. Et ça, c'est ma petite soeur.", en: "That's my boyfriend, Simon. And that is my little sister.", align: "right" },
-                    { speaker: "Céline", fr: "Elle est mignonne ! Quel âge a-t-elle ?", en: "She is cute! How old is she?", align: "left" },
-                    { speaker: "David", fr: "Elle a dix ans.", en: "She is ten years old.", align: "right" }
+                    { speaker: "Person A", fr: "Bonjour, monsieur Légaré.", en: "Hello, Mr. Légaré.", align: "left" },
+                    { speaker: "Person B", fr: "Bonjour. Je m’appelle Anne-Sophie. Je suis heureuse de vous rencontrer.", en: "Hello, my name is Anne-Sophie. I am happy to meet you.", align: "right" }
                 ]
             }
         ],
-        culture: "<p><strong>Chum et Blonde :</strong> These are the standard, everyday terms used in Quebec to refer to a boyfriend ('mon chum') and girlfriend ('ma blonde'), regardless of the person's actual hair color!</p>"
+        culture: "<p>Using <em>Vous</em> to elders and strangers is highly respected both in France and Quebec. The rule remains identical across the Francophonie.</p>"
     },
-    { id: "6", title: "Les Goûts et Préférences", theme: "Tastes and Preferences", vocabulary: [{ fr: "Aimer", en: "To like/love" }, { fr: "Détester", en: "To hate" }, { fr: "Préférer", en: "To prefer" }, { fr: "C'est l'fun", en: "It's fun (Quebecism)" }, { fr: "C'est plate", en: "It's boring (Quebecism)" }], grammar: [{ title: "Aimer + infinitif", explanation: "<p>Use 'aimer' followed by an infinitive verb to express what you like to do.</p>", examples: [{ fr: "J'aime manger", en: "I like to eat" }, { fr: "Je n'aime pas chanter", en: "I don't like to sing" }] }], dialogues: [], culture: "<p>'C'est l'fun' (It's fun) and 'C'est plate' (It's boring) are incredibly common in spoken Quebec French.</p>"},
-    { id: "7", title: "La Nourriture et le Café", theme: "Food and Café Culture", vocabulary: [{ fr: "Le dépanneur", en: "Convenience store (Quebec)" }, { fr: "Le breuvage", en: "Beverage / Drink" }, { fr: "Le déjeuner", en: "Breakfast (Quebec)" }, { fr: "Le dîner", en: "Lunch (Quebec)" }, { fr: "Le souper", en: "Dinner (Quebec)" }], grammar: [{ title: "Les articles partitifs", explanation: "<p>Use du, de la, de l' to say 'some' when talking about food and drinks.</p>", examples: [{ fr: "Je bois du café", en: "I drink some coffee" }, { fr: "Il mange de la soupe", en: "He eats some soup" }] }], dialogues: [], culture: "<p>Quebec uses different meal names than France. Morning = Déjeuner. Noon = Dîner. Evening = Souper. A 'dépanneur' is the local corner store where you can buy beer, wine, snacks, and milk.</p>"},
-    { id: "8", title: "Les Lieux et la Ville", theme: "Places and the City", vocabulary: [{ fr: "La rue", en: "The street" }, { fr: "Le trottoir", en: "The sidewalk" }, { fr: "Le métro", en: "The subway" }, { fr: "Le char", en: "The car (Quebec informal)" }, { fr: "L'épicerie", en: "The grocery store" }], grammar: [{ title: "Prépositions de lieu: À et Chez", explanation: "<p>'À' is used for public places and cities. 'Chez' is used for someone's home or a professional's office.</p>", examples: [{ fr: "Je vais à Montréal", en: "I am going to Montreal" }, { fr: "Je vais chez le médecin", en: "I am going to the doctor" }] }], dialogues: [], culture: "<p>In Quebec, a car is informally called 'un char' rather than 'une voiture' (though 'voiture' is understood and used formally).</p>" },
-    { id: "9", title: "L'Activités Quotidiennes", theme: "Daily Routine", vocabulary: [{ fr: "Se réveiller", en: "To wake up" }, { fr: "Se lever", en: "To get up" }, { fr: "Se brosser les dents", en: "To brush one's teeth" }, { fr: "Prendre une marche", en: "To take a walk (Quebecism)" }], grammar: [{ title: "Les verbes pronominaux", explanation: "<p>Reflexive verbs use a reflexive pronoun (me, te, se, nous, vous) matching the subject.</p>", examples: [{ fr: "Je me lève", en: "I get up" }, { fr: "Tu te laves", en: "You wash yourself" }] }], dialogues: [], culture: "<p>Taking a walk is translated directly from English in Quebec: 'prendre une marche', whereas in France they say 'faire une promenade'.</p>" },
-    { id: "10", title: "Le Magasinage et Vêtements", theme: "Shopping and Clothes", vocabulary: [{ fr: "Magasiner", en: "To shop (Quebecism)" }, { fr: "Les bas", en: "Socks (Quebec)" }, { fr: "Les souliers", en: "Shoes (Quebec)" }, { fr: "Le chandail", en: "Sweater / Shirt" }, { fr: "Les rabais", en: "Discounts / Sales" }], grammar: [{ title: "Les adjectifs démonstratifs", explanation: "<p>Used to point out specific items: this or that.</p>", examples: [{ fr: "Ce chandail", en: "This sweater" }, { fr: "Cette chemise", en: "This shirt" }, { fr: "Ces souliers", en: "These shoes" }] }], dialogues: [], culture: "<p>Shopping is called 'magasiner' in Quebec (from le magasin). In France, they use 'faire les courses' or 'faire du shopping'. Also, 'les bas' is used for socks instead of 'les chaussettes'.</p>" },
-    { id: "11", title: "L'Habitation", theme: "Housing and Rooms", vocabulary: [{ fr: "Un appartement", en: "An apartment" }, { fr: "Une chambre", en: "A bedroom" }, { fr: "Le salon", en: "The living room" }, { fr: "Le prix", en: "The price" }, { fr: "Louer", en: "To rent" }], grammar: [{ title: "Il y a", explanation: "<p>'Il y a' means 'there is' or 'there are'.</p>", examples: [{ fr: "Il y a deux chambres.", en: "There are two bedrooms." }] }], dialogues: [], culture: "<p>July 1st is historically 'Moving Day' (Jour du déménagement) in Quebec, where roughly 100,000 households move on the exact same day.</p>" },
-    { id: "12", title: "Le Temps et la Météo", theme: "Weather and Seasons", vocabulary: [{ fr: "La neige", en: "Snow" }, { fr: "Il fait froid", en: "It is cold" }, { fr: "Il fait frette", en: "It is freezing cold (Quebecism)" }, { fr: "L'hiver", en: "Winter" }, { fr: "L'été", en: "Summer" }], grammar: [{ title: "Faire pour la météo", explanation: "<p>We use the verb 'Faire' (to make/do) to describe the weather.</p>", examples: [{ fr: "Il fait beau", en: "The weather is nice" }, { fr: "Il fait mauvais", en: "The weather is bad" }] }], dialogues: [], culture: "<p>When the cold is intensely biting during winter, Quebeckers will famously declare 'Il fait frette!' instead of just saying 'Il fait froid'.</p>" },
-    { id: "13", title: "Les Sorties et Loisirs", theme: "Outings and Leisure", vocabulary: [{ fr: "La fin de semaine", en: "The weekend (Quebecism)" }, { fr: "Le cinéma", en: "The movie theater" }, { fr: "Regarder un film", en: "To watch a movie" }, { fr: "Jouer au hockey", en: "To play hockey" }], grammar: [{ title: "Aller + infinitif (Futur Proche)", explanation: "<p>The near future is formed by conjugating ALLER (to go) and adding an infinitive.</p>", examples: [{ fr: "Je vais manger", en: "I am going to eat" }, { fr: "Nous allons sortir", en: "We are going to go out" }] }], dialogues: [], culture: "<p>Quebec completely avoids the anglicism 'le weekend' used in France, preferring the literal translation 'la fin de semaine'.</p>" },
-    { id: "14", title: "Le Corps et la Santé", theme: "Body and Health", vocabulary: [{ fr: "La tête", en: "Head" }, { fr: "Le bras", en: "Arm" }, { fr: "La jambe", en: "Leg" }, { fr: "Malade", en: "Sick" }, { fr: "Avoir mal à", en: "To have an ache in..." }], grammar: [{ title: "Avoir mal à + article + partie du corps", explanation: "<p>To express pain in a body part. 'À + le' becomes 'au', 'à + les' becomes 'aux'.</p>", examples: [{ fr: "J'ai mal au dos", en: "My back hurts" }, { fr: "Elle a mal à la tête", en: "She has a headache" }] }], dialogues: [], culture: "<p>To express that one is very tired or broken down, a Quebecker might say 'Je suis raqué' (My muscles are extremely sore after exertion).</p>" },
-    { id: "15", title: "Décrire une Personne", theme: "Describing People", vocabulary: [{ fr: "Grand / Grande", en: "Tall" }, { fr: "Petit / Petite", en: "Short" }, { fr: "Les cheveux", en: "Hair" }, { fr: "Les yeux", en: "Eyes" }, { fr: "Fin / Fine", en: "Nice / Sweet (Quebecism)" }], grammar: [{ title: "L'accord des adjectifs (suite)", explanation: "<p>Adjectives must match the noun they modify in gender (masc/fem) and number (singular/plural).</p>", examples: [{ fr: "Il est petit.", en: "He is short." }, { fr: "Elles sont petites.", en: "They are short." }] }], dialogues: [], culture: "<p>In Quebec, if someone is very kind and pleasant, you describe them as 'fin' or 'fine', e.g., 'C'est un gars bien fin.' (He's a very nice guy).</p>" }
+    {
+        id: "6",
+        title: "Loisirs et Présent Continu",
+        theme: "Hobbies and Present Continuous",
+        vocabulary: [
+            { fr: "Faire du ski", en: "To ski" },
+            { fr: "Faire du camping", en: "To go camping" },
+            { fr: "Faire la vaisselle", en: "To wash the dishes" },
+            { fr: "Le char", en: "The car (Quebec colloquial)" },
+            { fr: "Ça me tente", en: "I feel like it / I'm tempted (Quebec)" },
+            { fr: "Ça marche !", en: "That works! / It's a deal!" }
+        ],
+        grammar: [
+            {
+                title: "Present Continuous (Être en train de)",
+                explanation: "<p>To express what you are doing right now, use <strong>être en train de + infinitive verb</strong>. This matches the English 'be doing' form.</p>",
+                examples: [
+                    { fr: "Je suis en train de manger.", en: "I am eating (right now)." },
+                    { fr: "Ils sont en train de jouer au hockey.", en: "They are playing hockey." }
+                ]
+            },
+            {
+                title: "Quebec Spoken Quirk",
+                explanation: "<p>In highly colloquial Quebec French, speakers might drop 'en train de' and use the present participle directly: <em>Je suis mangeant</em> (rare in writing, found in rural speech).</p>",
+                examples: []
+            }
+        ],
+        dialogues: [
+            {
+                context: "Weekend Plans",
+                lines: [
+                    { speaker: "A", fr: "Ça me tente d'aller faire du ski à Mont-Tremblant ce week-end.", en: "I feel like going skiing at Mont-Tremblant this weekend.", align: "left" },
+                    { speaker: "B", fr: "Oh wow, ça marche ! J'adore le ski ! On prend mon char.", en: "Oh wow, that works! I love skiing! We'll take my car.", align: "right" },
+                    { speaker: "A", fr: "D'accord, et on apporte de la poutine pour le lunch ?", en: "Okay, and we bring poutine for lunch?", align: "left" },
+                    { speaker: "B", fr: "Oui, bien sûr ! C'est obligatoire !", en: "Yes, of course! It's mandatory!", align: "right" }
+                ]
+            }
+        ],
+        culture: "<p>Quebeckers value outdoor activities. Expressions like <strong>Ça me tente</strong> (I feel like it) and <strong>mon char</strong> (my car) are quintessential markers of Quebec French.</p>"
+    },
+    {
+        id: "7",
+        title: "Les Adjectifs Qualificatifs",
+        theme: "Describing People and Adjectives",
+        vocabulary: [
+            { fr: "Gentil / Gentille", en: "Nice / Kind" },
+            { fr: "Intelligent(e)", en: "Smart" },
+            { fr: "Timide", en: "Shy" },
+            { fr: "Drôle", en: "Funny" },
+            { fr: "Ben", en: "Very (Quebec colloquial for 'bien')" }
+        ],
+        grammar: [
+            {
+                title: "Adjective Gender and Placement",
+                explanation: "<p>Adjectives must agree in gender (add -e for feminine) and number (add -s for plural) with the noun they modify.</p><p>Most adjectives go <strong>after</strong> the noun, but short ones (beau, bon, grand, petit, jeune, vieux) go <strong>before</strong>.</p>",
+                examples: [
+                    { fr: "Un beau garçon", en: "A handsome boy" },
+                    { fr: "Une femme intelligente", en: "A smart woman" },
+                    { fr: "Il est beau -> Elle est belle", en: "He is handsome -> She is beautiful" }
+                ]
+            }
+        ],
+        dialogues: [
+            {
+                context: "Describing a Coworker",
+                lines: [
+                    { speaker: "A", fr: "Tu connais le nouveau comptable ?", en: "Do you know the new accountant?", align: "left" },
+                    { speaker: "B", fr: "Oui, il est ben gentil, il est très patient.", en: "Yes, he's very nice, he is very patient.", align: "right" },
+                    { speaker: "A", fr: "L'ancien était toujours en colère.", en: "The old one was always angry.", align: "left" }
+                ]
+            }
+        ],
+        culture: "<p>In Quebec, you will hear the word <em>ben</em> (a pronunciation of 'bien') used as an intensifier, similar to 'very' or 'super'. Example: <em>Il est ben drôle</em> (He is extremely funny).</p>"
+    },
+    {
+        id: "8",
+        title: "Au Restaurant et L'Impératif",
+        theme: "At the Restaurant and the Imperative",
+        vocabulary: [
+            { fr: "La facture / L'addition", en: "The bill" },
+            { fr: "Le fromage en grains", en: "Cheese curds" },
+            { fr: "La poutine", en: "Poutine (Quebec dish)" },
+            { fr: "Un steak frites, moyen", en: "A steak and fries, medium rare" }
+        ],
+        grammar: [
+            {
+                title: "The Imperative Mood (L'impératif)",
+                explanation: "<p>Used for commands and requests. To form it, take the present tense of (tu, nous, vous) and drop the pronoun.</p>",
+                examples: [
+                    { fr: "Donnez-moi la facture, s'il vous plaît. (Vous form)", en: "Give me the bill, please." },
+                    { fr: "Prends ce menu. (Tu form)", en: "Take this menu." },
+                    { fr: "Allons-y. (Nous form)", en: "Let's go." }
+                ]
+            }
+        ],
+        dialogues: [
+            {
+                context: "Ordering Poutine",
+                lines: [
+                    { speaker: "Waiter", fr: "Vous êtes prêt à commander ?", en: "Are you ready to order?", align: "left" },
+                    { speaker: "Customer", fr: "Oui, pour moi, je vais prendre une poutine, avec du fromage en grains.", en: "Yes, for me, I'll take a poutine, with cheese curds.", align: "right" },
+                    { speaker: "Waiter", fr: "Parfait. Ça sera prêt dans 15 minutes.", en: "Perfect. It will be ready in 15 minutes.", align: "left" }
+                ]
+            }
+        ],
+        culture: "<p>Poutine—fries, fresh cheese curds (fromage en grains), and hot gravy—is the most famous Quebec fast food. When asking for the check, Quebeckers often say <strong>la facture</strong> instead of l'addition.</p>"
+    },
+    {
+        id: "9",
+        title: "La Santé et Chez le Médecin",
+        theme: "Health and at the Doctor's",
+        vocabulary: [
+            { fr: "Le ventre", en: "The stomach / belly" },
+            { fr: "La gorge", en: "The throat" },
+            { fr: "Un rhume", en: "A cold" },
+            { fr: "De la fièvre", en: "A fever" },
+            { fr: "L'ordonnance", en: "The prescription" }
+        ],
+        grammar: [
+            {
+                title: "Avoir mal à (Having pain in)",
+                explanation: "<p>Combine <em>avoir mal à</em> with the definite article of the body part. Remember contractions: à + le = au, à + les = aux.</p>",
+                examples: [
+                    { fr: "J'ai mal au ventre.", en: "My stomach hurts. (au = à + le)" },
+                    { fr: "J'ai mal à la tête.", en: "My head hurts." },
+                    { fr: "J'ai mal aux dents.", en: "My teeth hurt. (aux = à + les)" }
+                ]
+            }
+        ],
+        dialogues: [
+            {
+                context: "At the Clinic",
+                lines: [
+                    { speaker: "Doctor", fr: "Bonjour, monsieur, qu'est-ce que vous avez ?", en: "Hello, sir, what's wrong?", align: "left" },
+                    { speaker: "Patient", fr: "J'ai mal à la gorge depuis 2 jours, pis j'ai de la fièvre.", en: "My throat has hurt for 2 days, and I have a fever.", align: "right" },
+                    { speaker: "Doctor", fr: "C'est un rhume. Voici l'ordonnance et votre congé de maladie.", en: "It's a cold. Here is the prescription and your sick note.", align: "left" }
+                ]
+            }
+        ],
+        culture: "<p>Quebec has a public health insurance system called RAMQ (Régie de l'assurance maladie du Québec). Many doctors ask you to rest and take Tylenol over prescribing heavy drugs for mild illness.</p>"
+    },
+    {
+        id: "10",
+        title: "Demander Son Chemin",
+        theme: "Asking for Directions",
+        vocabulary: [
+            { fr: "Tout droit", en: "Straight ahead" },
+            { fr: "À gauche / À droite", en: "To the left / To the right" },
+            { fr: "Le feu de circulation", en: "The traffic light" },
+            { fr: "À pied", en: "On foot / walking" },
+            { fr: "Je me suis perdu(e)", en: "I am lost" }
+        ],
+        grammar: [
+            {
+                title: "Directions via Imperative",
+                explanation: "<p>When giving directions to a stranger, always use the <em>vous</em> form of the imperative.</p>",
+                examples: [
+                    { fr: "Tournez à gauche.", en: "Turn left." },
+                    { fr: "Allez tout droit.", en: "Go straight." },
+                    { fr: "Prenez la première rue.", en: "Take the first street." }
+                ]
+            }
+        ],
+        dialogues: [
+            {
+                context: "Lost near Metro Berri-UQAM",
+                lines: [
+                    { speaker: "Tourist", fr: "Pardon, je me suis perdu. Comment aller à la station Berri-UQAM ?", en: "Excuse me, I'm lost. How do I get to Berri-UQAM station?", align: "left" },
+                    { speaker: "Local", fr: "Allez tout droit jusqu'au feu, puis tournez à droite.", en: "Go straight to the light, then turn right.", align: "right" },
+                    { speaker: "Tourist", fr: "C'est loin ?", en: "Is it far?", align: "left" },
+                    { speaker: "Local", fr: "Non, c'est 5 minutes à pied, tu ne peux pas le rater.", en: "No, it's a 5 minute walk, you can't miss it.", align: "right" }
+                ]
+            }
+        ],
+        culture: "<p>Montreal's downtown revolves around <em>Rue Sainte-Catherine</em> (the main shopping artery) and major metro hubs like Berri-UQAM. Quebeckers are famously helpful when offering directions.</p>"
+    },
+    {
+        id: "11",
+        title: "Les Activités Passées",
+        theme: "Past Activities (Passé Composé)",
+        vocabulary: [
+            { fr: "Hier", en: "Yesterday" },
+            { fr: "Ce matin", en: "This morning" },
+            { fr: "La semaine dernière", en: "Last week" },
+            { fr: "Le week-end (la fin de semaine)", en: "The weekend" }
+        ],
+        grammar: [
+            {
+                title: "Passé Composé (The Past Tense)",
+                explanation: "<p>Used to describe completed past actions. Constructed using: <strong>Auxiliary verb (Avoir/Être) + Past Participle</strong>.</p>",
+                examples: [
+                    { fr: "J'ai travaillé.", en: "I worked. (Avoir)" },
+                    { fr: "J'ai mangé de la poutine.", en: "I ate poutine. (Avoir)" }
+                ]
+            },
+            {
+                title: "Using 'Être' as the Auxiliary",
+                explanation: "<p>16 specific movement verbs (aller, venir, sortir, arriver, etc.) use <em>Être</em> instead of Avoir. The participle must agree in gender/number with the subject when Être is used.</p>",
+                examples: [
+                    { fr: "Je suis allé(e).", en: "I went." },
+                    { fr: "Nous sommes sorti(e)s.", en: "We went out." }
+                ]
+            }
+        ],
+        dialogues: [
+            {
+                context: "Weekend Recap",
+                lines: [
+                    { speaker: "A", fr: "Qu'est-ce que tu as fait ce week-end ?", en: "What did you do this weekend?", align: "left" },
+                    { speaker: "B", fr: "J'ai été au camping avec ma blonde.", en: "I went camping with my girlfriend.", align: "right" },
+                    { speaker: "A", fr: "Wow, tu as eu du fun ?", en: "Wow, did you have fun?", align: "left" },
+                    { speaker: "B", fr: "Ben oui ! On a fait du feu, c'était ben bon.", en: "Oh yes! We made a fire, it was really nice.", align: "right" }
+                ]
+            }
+        ],
+        culture: "<p>When describing past events, Quebec speakers frequently use <em>J'ai été</em> interchangeably with <em>Je suis allé(e)</em> (I went), though the latter is grammar-book correct.</p>"
+    },
+    {
+        id: "13",
+        title: "Logement et Appartement",
+        theme: "Housing and Apartments",
+        vocabulary: [
+            { fr: "Le loyer", en: "The rent" },
+            { fr: "Le chauffage", en: "The heating" },
+            { fr: "La caution", en: "The security deposit" },
+            { fr: "Le bail", en: "The lease" },
+            { fr: "Non meublé", en: "Unfurnished" },
+            { fr: "Un 3 et demi (3 ½)", en: "A one-bedroom apartment (Quebec size metric)" }
+        ],
+        grammar: [
+            {
+                title: "Avoir besoin de (To have need of)",
+                explanation: "<p>To say 'I need', use <strong>avoir besoin de + noun/verb</strong>.</p>",
+                examples: [
+                    { fr: "J'ai besoin d'un appartement.", en: "I need an apartment." },
+                    { fr: "J'ai besoin de trouver un logement.", en: "I need to find housing." }
+                ]
+            }
+        ],
+        dialogues: [
+            {
+                context: "Calling about an Apartment (Kijiji)",
+                lines: [
+                    { speaker: "Tenant", fr: "Bonjour, je vous appelle pour l'appartement sur Kijiji. Quel est le loyer ?", en: "Hello, I'm calling about the Kijiji apartment. What is the rent?", align: "left" },
+                    { speaker: "Landlord", fr: "C'est 1400 dollars par mois, le chauffage et l'eau sont inclus.", en: "It's 1400 dollars a month, heating and water are included.", align: "right" },
+                    { speaker: "Tenant", fr: "Est-ce qu'il y a un stationnement ?", en: "Is there a parking space?", align: "left" },
+                    { speaker: "Landlord", fr: "Oui, inclus dans le prix.", en: "Yes, included in the price.", align: "right" }
+                ]
+            }
+        ],
+        culture: "<p>In Quebec, apartments are sized in halves. A <strong>1 ½</strong> is a studio, a <strong>3 ½</strong> is a one-bedroom apartment (living room, bedroom, kitchen + half bathroom), and a <strong>4 ½</strong> is a two-bedroom. Kijiji is the most popular localized platform to find them.</p>"
+    },
+    {
+        id: "14",
+        title: "La Météo et le Climat",
+        theme: "Weather and Climate",
+        vocabulary: [
+            { fr: "La neige", en: "The snow" },
+            { fr: "Le soleil", en: "The sun" },
+            { fr: "Le vent", en: "The wind" },
+            { fr: "Il pleut", en: "It is raining" }
+        ],
+        grammar: [
+            {
+                title: "Weather Expressions with 'Faire'",
+                explanation: "<p>We use the verb <em>Faire</em> or impersonal <em>Il</em> to describe conditions.</p>",
+                examples: [
+                    { fr: "Il fait très froid.", en: "It is very cold." },
+                    { fr: "Il neige beaucoup.", en: "It snows a lot." },
+                    { fr: "On prévoit du soleil.", en: "Sun is forecasted (They predict sun)." }
+                ]
+            }
+        ],
+        dialogues: [],
+        culture: "<p>Weather is a monumental topic in Quebec due to the extreme winters. The meteorology vocabulary—such as <em>Il vente beaucoup</em> (It's very windy)—is a major conversational staple.</p>"
+    },
+    {
+        id: "15",
+        title: "Vêtements et Projets Futurs",
+        theme: "Clothes and Future Plans",
+        vocabulary: [
+            { fr: "Le poulet / Le bœuf", en: "Chicken / Beef" },
+            { fr: "Les bleuets sauvages", en: "Wild blueberries" }
+        ],
+        grammar: [
+            {
+                title: "Futur Proche (The Near Future)",
+                explanation: "<p>To express what you are <em>going</em> to do, use <strong>Aller (present) + Infinitive verb</strong>.</p>",
+                examples: [
+                    { fr: "Je vais aller au lit.", en: "I am going to go to bed." },
+                    { fr: "Il va pleuvoir.", en: "It is going to rain." },
+                    { fr: "On va aller à la plage.", en: "We are going to go to the beach." }
+                ]
+            },
+            {
+                title: "Partitive Articles (Quantities)",
+                explanation: "<p>Use <em>du, de la, de l', des</em> for unknown quantities ('some'). Use specific measurements for defined amounts.</p>",
+                examples: [
+                    { fr: "Du lait", en: "Some milk" },
+                    { fr: "Deux litres de lait", en: "Two liters of milk" }
+                ]
+            }
+        ],
+        dialogues: [],
+        culture: "<p>Quebec wild blueberries (les bleuets sauvages) are a tremendous point of pride, particularly those from the Lac-Saint-Jean region.</p>"
+    }
 ];
