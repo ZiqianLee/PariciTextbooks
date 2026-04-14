@@ -180,10 +180,32 @@ const episodes2 = [
         ],
         dialogues: [
             {
-                context: "Ordering Food",
+                context: "Ordering at a Restaurant (Local Quebeckers)",
                 lines: [
-                    { speaker: "Waiter", fr: "Vous êtes prêt à commander ?", en: "Are you ready to order?", align: "left" },
-                    { speaker: "Customer", fr: "Oui, pour moi, je vais prendre une poutine, avec du fromage en grains.", en: "Yes, for me, I will take a poutine, with cheese curds.", align: "right" }
+                    { speaker: "Customer", fr: "Salut ! On a réservé une table pour deux, au nom de Tremblay.", en: "Hi! We reserved a table for two, under the name Tremblay.", align: "left" },
+                    { speaker: "Host", fr: "Bonjour ! Oui, la table est prête, suivez-moi, s'il vous plaît.", en: "Hello! Yes, the table is ready, follow me, please.", align: "right" },
+                    { speaker: "Customer", fr: "Merci.", en: "Thank you.", align: "left" },
+                    { speaker: "Host", fr: "Voici le menu, vous avez le temps de regarder.", en: "Here is the menu, take your time to look.", align: "right" },
+                    { speaker: "Waiter", fr: "Vous êtes prêt à commander ?", en: "Are you ready to order?", align: "right" },
+                    { speaker: "Customer A", fr: "Oui, pour moi, je vais prendre une poutine, avec du fromage en grains.", en: "Yes, for me, I will take a poutine, with cheese curds.", align: "left" },
+                    { speaker: "Waiter", fr: "Parfait, et pour vous, madame ?", en: "Perfect, and for you, ma'am?", align: "right" },
+                    { speaker: "Customer B", fr: "Moi, je vais prendre la salade du chef, et un verre de bière locale.", en: "Me, I will take the chef's salad, and a glass of local beer.", align: "left" },
+                    { speaker: "Waiter", fr: "Parfait, ça sera prêt dans 15 minutes.", en: "Perfect, it will be ready in 15 minutes.", align: "right" },
+                    { speaker: "Customer", fr: "L'addition, s'il vous plaît.", en: "The bill, please.", align: "left" },
+                    { speaker: "Waiter", fr: "Voici la facture, ça fait 35 dollars.", en: "Here is the bill, that makes 35 dollars.", align: "right" },
+                    { speaker: "Customer", fr: "Voilà, je paie par carte.", en: "Here you go, I am paying by card.", align: "left" },
+                    { speaker: "Waiter", fr: "Merci ! Bonne soirée !", en: "Thank you! Have a good evening!", align: "right" }
+                ]
+            },
+            {
+                context: "Eating Poutine for the First Time",
+                lines: [
+                    { speaker: "A", fr: "Salut ! Tu as déjà mangé de la poutine ?", en: "Hi! Have you ever eaten poutine?", align: "left" },
+                    { speaker: "B", fr: "Non, c'est la première fois, c'est quoi ça ?", en: "No, it's the first time, what is it?", align: "right" },
+                    { speaker: "A", fr: "Oh, c'est le plat québécois ! C'est des frites, du fromage en grains, pis de la sauce.", en: "Oh, it's the Quebecois dish! It's fries, cheese curds, and some sauce.", align: "left" },
+                    { speaker: "B", fr: "Oh, ça a l'air bon !", en: "Oh, that looks good!", align: "right" },
+                    { speaker: "A", fr: "Oui, c'est super bon ! Tu vas aimer.", en: "Yes, it is super good! You are going to like it.", align: "left" },
+                    { speaker: "B", fr: "D'accord, je vais prendre ça, alors.", en: "Okay, I will take that, then.", align: "right" }
                 ]
             }
         ],
@@ -225,11 +247,31 @@ const episodes2 = [
         ],
         dialogues: [
             {
+                context: "Talking About Illness with a Friend",
+                lines: [
+                    { speaker: "A", fr: "Salut ! Tu as l'air malade, ça va ?", en: "Hi! You look sick, are you okay?", align: "left" },
+                    { speaker: "B", fr: "Non, ça va pas. J'ai mal à la tête, pis j'ai de la fièvre.", en: "No, not okay. My head hurts, and I have a fever.", align: "right" },
+                    { speaker: "A", fr: "Oh non, tu as un rhume ?", en: "Oh no, do you have a cold?", align: "left" },
+                    { speaker: "B", fr: "Oui, je pense. J'ai de la toux aussi.", en: "Yes, I think so. I also have a cough.", align: "right" },
+                    { speaker: "A", fr: "Tu devrais rester chez toi, ne pas aller travailler.", en: "You should stay home, and not go to work.", align: "left" },
+                    { speaker: "B", fr: "Oui, je vais prendre un jour de congé.", en: "Yes, I am going to take a day off.", align: "right" },
+                    { speaker: "A", fr: "Tu as besoin de quelque chose ? Je peux t'acheter des médicaments ?", en: "Do you need anything? Can I buy you meds?", align: "left" },
+                    { speaker: "B", fr: "Oh oui, ça serait gentil ! Je veux du Tylenol pour la fièvre.", en: "Oh yes, that would be nice! I want Tylenol for the fever.", align: "right" },
+                    { speaker: "A", fr: "D'accord, je vais passer au dépanneur en revenant du travail.", en: "Okay, I will stop at the corner store coming back from work.", align: "left" },
+                    { speaker: "B", fr: "Merci beaucoup, t'es ben gentil !", en: "Thank you so much, you are very kind!", align: "right" }
+                ]
+            },
+            {
                 context: "Doctor's Appointment",
                 lines: [
-                    { speaker: "Doc", fr: "Qu'est-ce que vous avez ?", en: "What's wrong?", align: "left" },
-                    { speaker: "Patient", fr: "J'ai mal à la gorge depuis 2 jours.", en: "My throat hurts for 2 days.", align: "right" },
-                    { speaker: "Doc", fr: "C'est un rhume... Voici l'ordonnance pour les médicaments, et votre congé de maladie.", en: "It's a cold... Here is the prescription for meds, and your sick note.", align: "left" }
+                    { speaker: "Doc", fr: "Bonjour, monsieur, qu'est-ce que vous avez ?", en: "Hello sir, what is wrong with you?", align: "left" },
+                    { speaker: "Patient", fr: "Bonjour, docteur. J'ai mal à la gorge depuis 2 jours, pis j'ai de la fièvre.", en: "Hello doctor. My throat hurts for 2 days, and I have a fever.", align: "right" },
+                    { speaker: "Doc", fr: "D'accord, ouvrez la bouche, s'il vous plaît...", en: "Okay, open your mouth, please...", align: "left" },
+                    { speaker: "Doc", fr: "Ok, c'est un rhume, rien de grave. Vous devez rester chez vous 3 jours, prendre des médicaments.", en: "Ok, it's a cold, nothing serious. You must stay home for 3 days, take meds.", align: "left" },
+                    { speaker: "Patient", fr: "D'accord, est-ce que je peux travailler ?", en: "Okay, can I work?", align: "right" },
+                    { speaker: "Doc", fr: "Non, il faut rester chez vous, pour ne pas contaminer les autres.", en: "No, you must stay home, so as not to infect others.", align: "left" },
+                    { speaker: "Doc", fr: "Voici l'ordonnance pour les médicaments, et votre congé de maladie.", en: "Here is the prescription for meds, and your sick note.", align: "left" },
+                    { speaker: "Patient", fr: "Merci beaucoup.", en: "Thank you very much.", align: "right" }
                 ]
             }
         ],
@@ -284,12 +326,29 @@ const episodes2 = [
         ],
         dialogues: [
             {
-                context: "Lost Tourist",
+                context: "Lost Tourist Looking for the Subway",
                 lines: [
-                    { speaker: "Tourist", fr: "Pardon, je me suis perdu. Comment aller à la station Berri-UQAM ?", en: "Excuse me, I'm lost. How do I get to Berri-UQAM station?", align: "left" },
-                    { speaker: "Local", fr: "Allez tout droit, jusqu'au feu de circulation. Pis, tu tournes à droite.", en: "Go straight, up to the traffic light. Then, you turn right.", align: "right" },
+                    { speaker: "Tourist", fr: "Pardon, madame, je me suis perdu. Comment aller à la station de métro Berri-UQAM ?", en: "Excuse me, ma'am, I am lost. How do I get to Berri-UQAM subway station?", align: "left" },
+                    { speaker: "Local", fr: "Oh, c'est facile ! Allez tout droit, jusqu'au feu de circulation.", en: "Oh, it's easy! Go straight ahead, until the traffic light.", align: "right" },
+                    { speaker: "Tourist", fr: "D'accord...", en: "Okay...", align: "left" },
+                    { speaker: "Local", fr: "Pis, au feu, tu tournes à droite, pis tu continues 2 minutes, c'est là.", en: "Then, at the light, you turn right, then you continue for 2 minutes, it's there.", align: "right" },
                     { speaker: "Tourist", fr: "C'est loin ?", en: "Is it far?", align: "left" },
-                    { speaker: "Local", fr: "Non, c'est 5 minutes à pied, tu ne peux pas le rater.", en: "No, it's 5 minutes walking, you can't miss it.", align: "right" }
+                    { speaker: "Local", fr: "Non, c'est 5 minutes à pied, tu ne peux pas le rater.", en: "No, it's 5 minutes walking, you can't miss it.", align: "right" },
+                    { speaker: "Tourist", fr: "Oh, merci beaucoup !", en: "Oh, thank you very much!", align: "left" },
+                    { speaker: "Local", fr: "Bienvenue !", en: "You're welcome!", align: "right" }
+                ]
+            },
+            {
+                context: "Looking for Sainte-Catherine Street",
+                lines: [
+                    { speaker: "A", fr: "Pardon, monsieur, où est la Rue Sainte-Catherine ?", en: "Excuse me, sir, where is Sainte-Catherine Street?", align: "left" },
+                    { speaker: "B", fr: "Oh, c'est en bas de la rue, tu descends tout droit.", en: "Oh, it's down the street, you go straight down.", align: "right" },
+                    { speaker: "A", fr: "D'accord, il y a des magasins de vêtements là-bas ?", en: "Okay, are there clothing stores there?", align: "left" },
+                    { speaker: "B", fr: "Oui, c'est la rue de shopping, il y a plein de magasins.", en: "Yes, it is the shopping street, there are plenty of stores.", align: "right" },
+                    { speaker: "A", fr: "Parfait, c'est loin ?", en: "Perfect, is it far?", align: "left" },
+                    { speaker: "B", fr: "Non, c'est 3 minutes à pied, c'est tout proche.", en: "No, it's 3 minutes walking, it's right near.", align: "right" },
+                    { speaker: "A", fr: "Merci beaucoup !", en: "Thank you very much!", align: "left" },
+                    { speaker: "B", fr: "Bienvenue !", en: "You're welcome!", align: "right" }
                 ]
             }
         ],

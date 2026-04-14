@@ -26,12 +26,31 @@ const episodes3 = [
         ],
         dialogues: [
             {
-                context: "Weekend Recap",
+                context: "Weekend Recap with a Colleague",
                 lines: [
-                    { speaker: "A", fr: "Qu'est-ce que tu as fait ce week-end ?", en: "What did you do this weekend?", align: "left" },
-                    { speaker: "B", fr: "J'ai été faire du ski avec des amis !", en: "I went skiing with friends!", align: "right" },
-                    { speaker: "A", fr: "Wow, tu as eu du fun ?", en: "Wow, did you have fun?", align: "left" },
-                    { speaker: "B", fr: "Ben oui ! Ça été le fun !", en: "Oh yes! It was fun!", align: "right" }
+                    { speaker: "A", fr: "Salut ! Qu'est-ce que tu as fait ce week-end ?", en: "Hi! What did you do this weekend?", align: "left" },
+                    { speaker: "B", fr: "Oh, j'ai été faire du ski avec des amis !", en: "Oh, I went skiing with some friends!", align: "right" },
+                    { speaker: "A", fr: "Wow, c'est super ! Il a fait beau ?", en: "Wow, that's great! Was the weather nice?", align: "left" },
+                    { speaker: "B", fr: "Oui, il a fait super beau, c'était pas trop froid.", en: "Yes, the weather was super nice, it wasn't too cold.", align: "right" },
+                    { speaker: "A", fr: "Tu as eu du fun ?", en: "Did you have fun?", align: "left" },
+                    { speaker: "B", fr: "Ben oui ! Ça été le fun ! On a mangé de la poutine au restaurant sur la montagne.", en: "Oh yes! It was fun! We ate poutine at the restaurant on the mountain.", align: "right" },
+                    { speaker: "A", fr: "Oh, parfait ! Moi, ce week-end, j'ai été au camping avec ma blonde.", en: "Oh, perfect! Me, this weekend, I went camping with my girlfriend.", align: "left" },
+                    { speaker: "B", fr: "Oh, c'est cool aussi ! Tu as aimé ?", en: "Oh, that's cool too! Did you like it?", align: "right" },
+                    { speaker: "A", fr: "Oui, on a fait du feu, on a bu de la bière, c'était ben bon.", en: "Yes, we made a fire, drank some beer, it was really good.", align: "left" },
+                    { speaker: "B", fr: "Wow, ça a l'air super !", en: "Wow, sounds great!", align: "right" }
+                ]
+            },
+            {
+                context: "What Did You Do Yesterday?",
+                lines: [
+                    { speaker: "A", fr: "Salut ! Tu as été au travail hier ?", en: "Hi! Did you go to work yesterday?", align: "left" },
+                    { speaker: "B", fr: "Non, j'étais malade, j'ai resté chez moi.", en: "No, I was sick, I stayed home.", align: "right" },
+                    { speaker: "A", fr: "Oh non, tu vas mieux maintenant ?", en: "Oh no, are you better now?", align: "left" },
+                    { speaker: "B", fr: "Oui, ça va mieux, j'ai dormi toute la journée.", en: "Yes, better, I slept all day.", align: "right" },
+                    { speaker: "A", fr: "Parfait, tu as mangé quelque chose ?", en: "Perfect, did you eat anything?", align: "left" },
+                    { speaker: "B", fr: "Oui, j'ai mangé de la soupe aux pois, c'était bon.", en: "Yes, I ate pea soup, it was good.", align: "right" },
+                    { speaker: "A", fr: "D'accord, si tu as besoin de quelque chose, n'hésite pas.", en: "Okay, if you need anything, don't hesitate.", align: "left" },
+                    { speaker: "B", fr: "Merci, t'es ben gentil !", en: "Thanks, you are very nice!", align: "right" }
                 ]
             }
         ],
@@ -90,11 +109,31 @@ const episodes3 = [
                 context: "Calling about an Ad on Kijiji",
                 lines: [
                     { speaker: "Locataire", fr: "Bonjour, je vous appelle pour l'appartement sur Kijiji.", en: "Hello, calling about the apartment on Kijiji.", align: "left" },
-                    { speaker: "Propriétaire", fr: "Oui, l'appartement est toujours disponible.", en: "Yes, the apartment is still available.", align: "right" },
-                    { speaker: "Locataire", fr: "Quel est le loyer ?", en: "What is the rent?", align: "left" },
-                    { speaker: "Propriétaire", fr: "1400 dollars par mois, le chauffage et l'eau sont inclus.", en: "1400 dollars a month, heating and water included.", align: "right" },
-                    { speaker: "Locataire", fr: "C'est meublé ou non meublé ?", en: "Is it furnished or unfurnished?", align: "left" },
-                    { speaker: "Propriétaire", fr: "Non meublé, mais il y a la cuisine équipée.", en: "Unfurnished, but the kitchen is equipped.", align: "right" }
+                    { speaker: "Propriétaire", fr: "Bonjour, oui, l'appartement est toujours disponible.", en: "Hello, yes, the apartment is still available.", align: "right" },
+                    { speaker: "Locataire", fr: "Parfait ! Quel est le loyer ?", en: "Perfect! What is the rent?", align: "left" },
+                    { speaker: "Propriétaire", fr: "C'est 1400 dollars par mois, le chauffage et l'eau sont inclus.", en: "It's 1400 dollars a month, heating and water included.", align: "right" },
+                    { speaker: "Locataire", fr: "D'accord, est-ce que c'est meublé ?", en: "Okay, is it furnished?", align: "left" },
+                    { speaker: "Propriétaire", fr: "Non, c'est non meublé, mais il y a la cuisine équipée.", en: "No, unfurnished, but the kitchen is equipped.", align: "right" },
+                    { speaker: "Locataire", fr: "D'accord, est-ce qu'il y a un stationnement ?", en: "Okay, is there parking?", align: "left" },
+                    { speaker: "Propriétaire", fr: "Oui, le stationnement est inclus dans le prix.", en: "Yes, parking is included in the price.", align: "right" },
+                    { speaker: "Locataire", fr: "Parfait, est-ce que je peux visiter l'appartement demain ?", en: "Perfect, can I visit the apartment tomorrow?", align: "left" },
+                    { speaker: "Propriétaire", fr: "Oui, bien sûr, on se rencontre à 14h ?", en: "Yes, of course, shall we meet at 2 PM?", align: "right" },
+                    { speaker: "Locataire", fr: "D'accord, ça marche ! Merci beaucoup.", en: "Okay, that works! Thank you.", align: "left" }
+                ]
+            },
+            {
+                context: "Friends Discussing Apartment Hunting",
+                lines: [
+                    { speaker: "A", fr: "Salut ! Tu as trouvé un appartement ?", en: "Hi! Did you find an apartment?", align: "left" },
+                    { speaker: "B", fr: "Non, pas encore, c'est ben dur de trouver quelque chose de pas cher.", en: "No, not yet, it's really hard to find something cheap.", align: "right" },
+                    { speaker: "A", fr: "Oh oui, le marché de l'appartement à Montréal est trop cher.", en: "Oh yes, the apartment market in Montreal is too expensive.", align: "left" },
+                    { speaker: "B", fr: "Je cherche un 3 et demi, avec un stationnement, pas plus de 1500.", en: "I'm looking for a 3 and a half, with parking, no more than 1500.", align: "right" },
+                    { speaker: "A", fr: "Oh, c'est possible, tu as regardé sur Kijiji ?", en: "Oh, it's possible, did you look on Kijiji?", align: "left" },
+                    { speaker: "B", fr: "Oui, j'ai regardé, mais il y a beaucoup d'arnaques.", en: "Yes, I looked, but there are a lot of scams.", align: "right" },
+                    { speaker: "A", fr: "Oh oui, fais attention, ne donne pas d'argent à quelqu'un que tu ne connais pas.", en: "Oh yes, be careful, don't give money to someone you don't know.", align: "left" },
+                    { speaker: "B", fr: "Oui, je sais, c'est pour ça que je suis prudent.", en: "Yes, I know, that's why I'm careful.", align: "right" },
+                    { speaker: "A", fr: "D'accord, si je vois quelque chose, je te dis.", en: "Okay, if I see something, I'll tell you.", align: "left" },
+                    { speaker: "B", fr: "Merci, t'es ben gentil !", en: "Thanks, you're so nice!", align: "right" }
                 ]
             }
         ],
